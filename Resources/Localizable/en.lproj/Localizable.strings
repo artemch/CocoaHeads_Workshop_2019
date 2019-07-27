@@ -1,0 +1,31 @@
+"signup_title" = "Register";
+"signin_title" = "Sign in";
+"reset_password_title" = "Password reset";
+"terms_and_conditions_title"= "Terms and Conditions";
+"back" = "Back";
+"login" = "Sign In";
+"signup" = "Register";
+"signin_google" = "Sign In with Google";
+"email_placeholder" = "Email";
+"password_placeholder" = "Password";
+"new_password_placeholder" = "New password";
+"current_password_placeholder" = "Current password";
+"signup_signin_title_message" = "CocoaHeads Kyiv 2019";
+"signup_signin_welcome_message" = "Welcome to CocoaHeads workshop!";
+"forgot_password" = "Forgot password?";
+"agree_to_all" = "I agree to all the %@";
+"terms_and_conditions" = "terms and conditions";
+"do_not_have_an_account" = "I don't have an account";
+"have_an_account" = "I already have an account";
+"we_will_send_you_a_reset_link" = "We’ll send you a reset link";
+"reset_password" = "Send reset link";
+"reset_password_result_title" = "We’ve sent you an email";
+"agree_and_continue" = "Agree and continue";
+"tab_bar_profile" = "Profile";
+"cancel" = "Cancel";
+"ok" = "OK";
+"full_name_placeholder" = "Full Name";
+"sign_out" = "Sign Out";
+"done" = "Done";
+
+

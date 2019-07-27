@@ -1,0 +1,11 @@
+/* 
+  Localization.strings
+  Workshop_2019
+
+  Created by Artem Chabannyi on 4/26/19.
+  Copyright © 2019 IDAP Group. All rights reserved.
+*/
+
+"ok" = "OK";
+"back" = "Back";
+"retry" = "Retry";

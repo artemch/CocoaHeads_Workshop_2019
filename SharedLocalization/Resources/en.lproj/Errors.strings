@@ -1,0 +1,24 @@
+/* 
+  File.strings
+  Workshop_2019
+
+  Created by Artem Chabannyi on 4/26/19.
+  Copyright © 2019 IDAP Group. All rights reserved.
+*/
+
+"undefined" = "undefined";
+"should_be_meal_type" = "Server should return meal type";
+"input_failed" = "inputFailed";
+"response_failed" = "responseFailed";
+"access_token_missing" = "Access Token missing";
+"error_connect_to_the_server" = "Couldn’t connect to the server";
+"feiled_to_load_goal" = "Failed to load goal";
+"no_token" = "No Token";
+"invalid_email" = "Invalid email";
+"invalid_password" = "Invalid password";
+"passwords_must_not_match" = "New password should not match old";
+"display_name_min_length" = "Display Name should be minimum %d characters";
+"agree_with_terms_and_conditions" = "You must agree with terms and conditions";
+"food_should_be_choosen" = "Food should be choosen";
+"failed_transform_image_to_data" = "Failed transform image to data";
+"undefined_email_error" = "Undefined email error!";

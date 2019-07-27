@@ -1,0 +1,10 @@
+input_dir: Resources
+output_dir: Generated/
+strings:
+  inputs: en.lproj
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: L10n-Constants.Generated.swift
+      params:
+          publicAccess: public

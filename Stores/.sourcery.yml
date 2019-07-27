@@ -1,0 +1,9 @@
+sources:
+  - "source"
+templates:
+  - "../SourceryTemplates"
+output:
+  "Generated"
+args:
+  import:
+    - Models

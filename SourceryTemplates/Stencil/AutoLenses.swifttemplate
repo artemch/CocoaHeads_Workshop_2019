@@ -1,0 +1,69 @@
+// swiftlint:disable variable_name
+
+<%_
+func imports(_ arguments: [String: Any]) -> [String] {
+    return stringArray(fromArguments: arguments, forKey: "import")
+        .map { return "import \($0)" }
+}
+
+func stringArray(fromArguments arguments: [String: Any], forKey key: String) -> [String] {
+
+    if let argument = arguments[key] as? String {
+        return [argument]
+    } else if let manyArguments = arguments[key] as? [String] {
+        return manyArguments
+    } else {
+        return []
+    }
+}
+_%>
+
+<%_ for imports in imports(argument) { -%>
+<%_ %><%= imports %>
+<%_ } -%>
+
+infix operator *~: MultiplicationPrecedence
+infix operator |>: AdditionPrecedence
+
+struct Lens<Whole, Part> {
+    let get: (Whole) -> Part
+    let set: (Part, Whole) -> Whole
+}
+
+func * <A, B, C> (lhs: Lens<A, B>, rhs: Lens<B, C>) -> Lens<A, C> {
+    return Lens<A, C>(
+        get: { a in rhs.get(lhs.get(a)) },
+        set: { (c, a) in lhs.set(rhs.set(c, lhs.get(a)), a) }
+    )
+}
+
+func *~ <A, B> (lhs: Lens<A, B>, rhs: B) -> (A) -> A {
+    return { a in lhs.set(rhs, a) }
+}
+
+func |> <A, B> (x: A, f: (A) -> B) -> B {
+    return f(x)
+}
+
+func |> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
+    return { g(f($0)) }
+}
+
+<%_ for type in types.all
+                where (type is Struct)
+                && (type.implements["AutoLenses"] != nil || type.annotations["AutoLenses"] != nil) { -%>
+extension <%= type.name %> {
+  <%_ for variable in type.storedVariables { -%>
+    static let <%= variable.name %>Lens = Lens<<%=type.name%>, <%_ if let t = variable.type {-%> <%=t.name%> <%_ if variable.typeName.isOptional {-%>?<%_}-%> <%_ } else {-%> <%=variable.typeName%> <%_}-%> >(
+      get: { $0.<%=variable.name%> },
+      set: { part, whole in
+        <%=type.name%>(
+        <%_ for (index, argument) in type.storedVariables.enumerated() {-%>
+         <%=argument.name%>:<%_ if variable.name == argument.name {-%> part <%_ } else { -%> whole.<%=argument.name%> <%_ } -%><%_ if index < type.storedVariables.endIndex-1 {-%>,<%_ } -%>
+        <%_ } -%>
+        )
+      }
+    )
+  <%_ } -%>
+}
+<%_ } -%>

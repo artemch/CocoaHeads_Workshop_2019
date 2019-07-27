@@ -1,0 +1,157 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireReactive (0.1.0):
+    - Alamofire (~> 4.8.1)
+    - ReactiveSwift (~> 4.0)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
+  - FoundationKit (0.1.0)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher/Core (1.2.1)
+  - IDPCastable (0.1.3)
+  - IDPDesign (0.2.0)
+  - IDPRootViewGettable (0.1.0):
+    - IDPCastable
+  - IQKeyboardManager (6.2.1)
+  - JTAppleCalendar (7.1.7)
+  - MZAppearance (1.1.6)
+  - MZFormSheetPresentationController (2.4.3):
+    - MZAppearance
+  - Nuke (7.5.2)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - ReactiveSwiftKit (0.1.3):
+    - ReactiveSwift (~> 4.0)
+  - Realm (3.14.0):
+    - Realm/Headers (= 3.14.0)
+  - Realm/Headers (3.14.0)
+  - RealmSwift (3.14.0):
+    - Realm (= 3.14.0)
+  - Result (4.1.0)
+  - SnapKit (4.2.0)
+  - Sourcery (0.16.0)
+  - SwiftGen (6.1.0)
+  - Toucan (1.1.0)
+  - UIKitLib (0.1.4)
+  - Valet (3.2.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.1)
+  - AlamofireReactive (from `AlamofireReactive/`)
+  - Crashlytics
+  - Fabric
+  - FoundationKit (from `FoundationKit/`)
+  - GoogleSignIn (~> 4.0)
+  - IDPDesign (from `https://github.com/idapgroup/IDPDesign.git`)
+  - IDPRootViewGettable (from `https://github.com/idapgroup/IDPRootViewGettable.git`, commit `4cd3852`)
+  - IQKeyboardManager (~> 6)
+  - JTAppleCalendar (~> 7.0)
+  - MZFormSheetPresentationController
+  - Nuke (~> 7.5.2)
+  - ReactiveCocoa (~> 8.0)
+  - ReactiveSwift (~> 4.0)
+  - ReactiveSwiftKit (from `ReactiveSwiftKit/`)
+  - RealmSwift (~> 3.0)
+  - Result (~> 4.0)
+  - SnapKit (~> 4.2.0)
+  - Sourcery
+  - SwiftGen (~> 6.0)
+  - Toucan (~> 1.1.0)
+  - UIKitLib (from `UIKitLib/`)
+  - Valet (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Crashlytics
+    - Fabric
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - IDPCastable
+    - IQKeyboardManager
+    - JTAppleCalendar
+    - MZAppearance
+    - MZFormSheetPresentationController
+    - Nuke
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Realm
+    - RealmSwift
+    - Result
+    - SnapKit
+    - Sourcery
+    - SwiftGen
+    - Toucan
+    - Valet
+
+EXTERNAL SOURCES:
+  AlamofireReactive:
+    :path: AlamofireReactive/
+  FoundationKit:
+    :path: FoundationKit/
+  IDPDesign:
+    :git: https://github.com/idapgroup/IDPDesign.git
+  IDPRootViewGettable:
+    :commit: 4cd3852
+    :git: https://github.com/idapgroup/IDPRootViewGettable.git
+  ReactiveSwiftKit:
+    :path: ReactiveSwiftKit/
+  UIKitLib:
+    :path: UIKitLib/
+
+CHECKOUT OPTIONS:
+  IDPDesign:
+    :commit: 6ea1a8b4603ec8babdb00184d2b01c6f48dc9ab8
+    :git: https://github.com/idapgroup/IDPDesign.git
+  IDPRootViewGettable:
+    :commit: 4cd3852
+    :git: https://github.com/idapgroup/IDPRootViewGettable.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireReactive: 7de5e2c7c69a50440fba46296d2e5b0f35dbccdd
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  FoundationKit: 7df54db2c28b7c494809210fcd737adf65ca64ba
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  IDPCastable: 15051ffccffca8408dd633fbc2a19584e2e11e9c
+  IDPDesign: b90b3f181e12bc57438be164544ac6f242a02024
+  IDPRootViewGettable: a558b25533b43500531885a5b8ba5d51c372ccdc
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetPresentationController: fbfdbad31884f16fac17fbe3c44c168306cc1095
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  ReactiveSwiftKit: fac50ce4fff12b53056b2cd35811af7e9942f5d5
+  Realm: 221b25919bb5a010a3c597d707f8df3492dcd93a
+  RealmSwift: 28f22dfa6a27b9a778cfb09471558b6afcf1022c
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Sourcery: 3e55aad9719ee5782ab81eb16addd44d272e4d13
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  Toucan: 8f228fabb21521b9658692df9325fe76e71d74b2
+  UIKitLib: d19934b88c4053ee96c76ffa5e9ffad264c1a739
+  Valet: 4af0382d4a94db5c7861504f751884f653437d24
+
+PODFILE CHECKSUM: 44a0c27ae975bf1880c1e46fa3b3c490efb135ca
+
+COCOAPODS: 1.7.4

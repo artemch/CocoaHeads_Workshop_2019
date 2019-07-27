@@ -1,0 +1,24 @@
+sources:
+  include:
+    - ./BackendServices
+    - ./StorageServices
+    - ./Services
+    - ./GoogleSignInProvider
+    - ./Stores
+templates:
+  - ./Pods/SwiftyMocky/Sources/Templates
+output:
+  ./KetogenicTests
+args:
+  testable:
+    - Ketogenic
+  import:
+    - ReactiveSwift
+    - Models
+    - BackendServices
+    - Services
+    - Result
+    - GoogleSignInProvider
+    - StorageServices
+    - Stores
+    - ReactiveSwiftKit

@@ -1,0 +1,8 @@
+input_dir: Resources/
+output_dir: Resources/Generated/
+strings:
+  inputs: Localizable/en.lproj
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: L10n-Constants.Generated.swift

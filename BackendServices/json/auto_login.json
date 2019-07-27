@@ -1,0 +1,13 @@
+{
+    "auth": {
+        "provider": "email",
+        "token": "some_test_token",
+        "isRegistered": false
+    },
+    "account": {
+        "id": 1,
+        "displayName": "Test name",
+        "avatar": "",
+        "email": "t1@email.com"
+    }
+}

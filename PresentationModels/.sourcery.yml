@@ -1,0 +1,6 @@
+sources:
+- "source"
+- "../SourceryTemplates"
+templates:
+- "../SourceryTemplates"
+output: "Generated"
